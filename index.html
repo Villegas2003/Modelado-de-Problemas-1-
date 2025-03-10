@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Proyectil</title>
+
+    <!-- Cargar p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- Cargar estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎯 Simulación de Proyectil</h1>
+    </header>
+
+    <div id="config-container">
+        <div id="controls">
+            <h2>Configuración</h2>
+            <label>Velocidad Inicial (m/s):</label>
+            <input id="velocidadInicial" type="number" value="50">
+
+            <label>Ángulo (°):</label>
+            <input id="angulo" type="number" value="135">
+
+            <button id="startButton">Iniciar Simulación</button>
+            <button id="resetButton">Reiniciar</button>
+        </div>
+
+        <div id="data">
+            <h2>Datos</h2>
+            <p id="tiempo">Tiempo: 0 s</p>
+            <p id="posX">Posición X: 0.00 m</p>
+            <p id="posY">Posición Y: 0.00 m</p>
+            <p id="velX">Velocidad X: 0.00 m/s</p>
+            <p id="velY">Velocidad Y: 0.00 m/s</p>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <script src="js/proyectil.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+</html>
